@@ -2,7 +2,7 @@
 
 Uma extensão simples e funcional para o Google Chrome, construída com Manifest V3, que ajuda a manter o foco bloqueando sites distrativos durante períodos de trabalho ou estudo.
 
-Este projeto foi desenvolvido como parte do Bootcamp, com foco em boas práticas de desenvolvimento de extensões, uso de APIs do Chrome e organização de código.
+Este projeto foi desenvolvido com fins de aprendizado e prática durante a disciplina de bootcamp II no UniCEUB, com foco em boas práticas de desenvolvimento de extensões, uso de APIs do Chrome e organização de código.
 
 ## Funcionalidades
 
