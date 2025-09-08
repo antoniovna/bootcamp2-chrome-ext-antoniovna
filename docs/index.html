@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modo Foco - Extensão para Chrome</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f4f4f4; color: #333; }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { text-align: center; }
+        .cta-button { display: block; width: 250px; margin: 20px auto; padding: 15px; background: #28a745; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        img { max-width: 100%; border-radius: 5px; margin: 20px 0; }
+        code { background: #eee; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Modo Foco</h1>
+        <h2>Aumente sua produtividade bloqueando distrações.</h2>
+
+        <p>
+            Modo Foco é uma extensão para o Google Chrome (Manifest V3) projetada para ajudar você a se concentrar em suas tarefas. Defina um timer, escolha os sites que mais te distraem e deixe a extensão cuidar do resto.
+        </p>
+
+        <img src="screenshot.png" alt="Screenshot da extensão Modo Foco em ação">
+
+        <h2>Como Instalar</h2>
+        <ol>
+            <li>Baixe a versão mais recente pelo botão abaixo.</li>
+            <li>Descompacte o arquivo <code>.zip</code>.</li>
+            <li>No Chrome, acesse <code>chrome://extensions</code>.</li>
+            <li>Ative o "Modo de desenvolvedor".</li>
+            <li>Clique em "Carregar sem compactação" e selecione a pasta que você extraiu.</li>
+        </ol>
+
+        <a href="https://github.com/<seu-usuario>/<seu-repositorio>/releases/latest/download/modo-foco-extension.zip" class="cta-button">
+            Baixar a Extensão (.zip)
+        </a>
+
+        <h2>Permissões Necessárias</h2>
+        <ul>
+            <li><code>storage</code>: Para salvar sua lista de sites bloqueados e o estado do timer.</li>
+            <li><code>tabs</code>: Para verificar a URL das abas e redirecionar se necessário.</li>
+            <li><code>alarms</code>: Para controlar o tempo do período de foco.</li>
+        </ul>
+    </div>
+</body>
+</html>
