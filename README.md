@@ -4,7 +4,7 @@ Uma extensão simples e funcional para o Google Chrome, construída com Manifest
 
 Este projeto foi desenvolvido como parte do Bootcamp, com foco em boas práticas de desenvolvimento de extensões, uso de APIs do Chrome e organização de código.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **Timer de Foco:** Inicie um cronômetro diretamente do popup da extensão para começar um período de foco.
 - **Lista de Bloqueio Personalizável:** Adicione ou remova sites em uma página de configurações dedicada.
@@ -12,7 +12,7 @@ Este projeto foi desenvolvido como parte do Bootcamp, com foco em boas práticas
 - **Notificação Amigável:** Uma página simples informa que o site foi bloqueado para que você possa voltar à sua tarefa.
 - **Controle Simples:** Inicie e pare o modo foco a qualquer momento.
 
-## 🛠️ Estrutura do Projeto
+## Estrutura do Projeto
 
 O projeto segue uma estrutura de pastas clara e organizada:
 
@@ -30,12 +30,12 @@ O projeto segue uma estrutura de pastas clara e organizada:
 └─ LICENSE          # Licença do projeto (MIT)
 ```
 
-## 🚀 Instalação e Uso
+## Instalação e Uso
 
 ### Instalação Manual (Modo Desenvolvedor)
 
 1.  Faça o download ou clone este repositório.
-    -   Você pode baixar o arquivo `.zip` da [página de Releases](https://github.com/antoniovna/<seu-repositorio>/releases).
+    -   Você pode baixar o arquivo `.zip` da [página de Releases](https://github.com/antoniovna/bootcamp2-chrome-ext-antoniovna/releases).
 2.  Descompacte o arquivo.
 3.  Abra o Google Chrome e acesse `chrome://extensions`.
 4.  Ative o **"Modo de desenvolvedor"** no canto superior direito.
@@ -50,6 +50,6 @@ O projeto segue uma estrutura de pastas clara e organizada:
 4.  Clique em **"Iniciar Foco"**.
 5.  Pronto! Tente acessar um dos sites bloqueados para ver a mágica acontecer.
 
-## 📜 Licença
+## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
