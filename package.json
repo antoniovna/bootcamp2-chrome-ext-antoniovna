@@ -1,0 +1,18 @@
+{
+  "name": "bootcamp2-chrome-ext-antoniovna",
+  "version": "1.0.0",
+  "description": "Uma extensão simples que adiciona uma borda vermelha à página.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-extensions.mjs",
+    "test:e2e": "playwright test",
+    "test": "npm run build && npm run test:e2e",
+    "build-and-test": "docker compose build --no-cache && docker compose run --rm e2e-tests",
+    "ci": "npm ci && npm test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2",
+    "archiver": "^7.0.1"
+  }
+}
