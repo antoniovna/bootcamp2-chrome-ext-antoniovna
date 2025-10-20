@@ -23,24 +23,16 @@ console.log('Arquivos da extensão copiados para dist/');
 
 const output = fs.createWriteStream(path.join(distDir, 'extension.zip'));
 const archive = archiver('zip', {
-  zlib: { level: 9 } 
+  zlib: { level: 9 }
 });
 
-archive.on('warning', (err) => {
-  if (err.code === 'ENOENT') {
-    console.warn(err);
-  } else {
-    throw err;
-  }
-});
-
-archive.on('error', (err) => {
-  throw err;
-});
-
-archive.pipe(output);
-archive.directory(distDir, false); 
-
-await archive.finalize();
-
-console.log(`Build finalizado! Pacote criado em ${distDir}/extension.zip`);
+await new Promise((res, rej) => {
+  output.on('close', res)
+  archive.on('error', rej)
+  archive.pipe(output)
+  archive.glob('**/*', {
+    cwd: distDir, ignore:
+      ['extension.zip']
+  });
+  archive.finalize()
+})

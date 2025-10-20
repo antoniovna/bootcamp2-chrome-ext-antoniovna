@@ -6,6 +6,7 @@ services:
       - CI=true
     volumes:
       - ./:/app
+      - /app/node_modules
     working_dir: /app
     command: npm run test:e2e
-    shm_size: 2gb  # evita falhas do Chromium por falta de shared memory
+    shm_size: 2gb 
